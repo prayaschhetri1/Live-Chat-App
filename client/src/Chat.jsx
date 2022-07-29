@@ -29,8 +29,6 @@ function Chat({ socket, username, room }) {
     });
   }, [socket]);
 
-
-
   return (
     <div className="chat-window">
       <div className="chat-header">
@@ -39,7 +37,6 @@ function Chat({ socket, username, room }) {
       <div className="chat-body">
         <ScrollToBottom className="message-container">
           {messageList.map((messageContent) => {
-             
             return (
               <div
                 className="message"
@@ -50,8 +47,12 @@ function Chat({ socket, username, room }) {
                     <p>{messageContent.message}</p>
                   </div>
                   <div className="message-meta">
-                    <p id="time">{messageContent.time}</p>
-                    <p id="author">{messageContent.author}</p>
+                    <p style={{ color: "white", fontSize: "8px" }} id="time">
+                      {messageContent.time}
+                    </p>
+                    <p style={{ color: "white", fontSize: "8px" }} id="author">
+                      {messageContent.author}
+                    </p>
                   </div>
                 </div>
               </div>
