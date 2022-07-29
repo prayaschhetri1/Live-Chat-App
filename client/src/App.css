@@ -1,15 +1,17 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: #fff;
-  color: #212121;
+  background: rgb(247, 247, 247);
+  color: #272a29;
   font-family: "Open Sans", sans-serif;
   display: grid;
   place-items: center;
+  
 }
 body {
   margin: 0%;
   padding: 0%;
+ 
 }
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 
@@ -17,17 +19,22 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding:0px 15px 35px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .joinChatContainer h3 {
   font-size: 2.5rem;
+  text-shadow: 2px 2px #b9b3b3;
   margin-bottom: 1rem;
 }
 .joinChatContainer input {
   width: 210px;
   height: 40px;
   margin: 7px;
-  border: 2px solid #43a047;
+  border: 2px solid #2f332f;
   border-radius: 5px;
   padding: 5px;
   font-size: 16px;
@@ -40,19 +47,20 @@ body {
   border: none;
   border-radius: 5px;
   padding: 5px;
-  font-size: 16px;
-  background: #43a047;
+  font-size: 17px;
+  font-weight: 700;
+  background: #1f231f;
   color: #fff;
   cursor: pointer;
 }
 
 .joinChatContainer button:hover {
-  background: #2e7d32;
+  background: #525552;
 }
 
 .chat-window {
-  width: 300px;
-  height: 420px;
+  width: 400px;
+  height: 550px;
 }
 
 .chat-window p {
@@ -74,8 +82,7 @@ body {
 }
 
 .chat-window .chat-body {
-  height: calc(450px - (45px + 70px));
-  
+  height: calc(573px - (45px + 70px));
   background: #fff;
 border-bottom:none;
   position: relative;
@@ -169,9 +176,9 @@ border-bottom:none;
 }
 
 .chat-window .chat-footer {
-  height: 40px;
+  height: 45px;
   border: 1px solid #263238;
- 
+  flex:end;
   display: flex;
   border-radius:20px
 
