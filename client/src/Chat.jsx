@@ -64,7 +64,7 @@ function Chat({ socket, username, room }) {
         <input
           type="text"
           value={currentMessage}
-          placeholder="Hey..."
+          placeholder="Something..."
           onChange={(event) => {
             setCurrentMessage(event.target.value);
           }}
